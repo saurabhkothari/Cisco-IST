@@ -69,7 +69,7 @@ variable "vsphere_vm_guest" {
 variable "vsphere_vm_disksize" {
   type = number
   description = "the size of the disk in GB"
-  default = 20
+  default = 25
 }
 
 variable "timeout" {
