@@ -1,6 +1,7 @@
 variable "vsphere_user" {
   type = string
   description = "the username for vsphere"
+  default = "saukotha@dc.css"
 }
 variable "vsphere_password" {
   type = string
@@ -9,21 +10,25 @@ variable "vsphere_password" {
 variable "vsphere_server" {
   type = string
   description = "the hostname or ip address of your vcenter server"
+  default = "10.106.236.60"
 }
 
 variable "vsphere_datacenter" {
   type = string
   description = "the name of the datacenter"
+  default="Site-1"
 }
 
 variable "vsphere_datastore" {
   type = string
   description = "the name of the datastore"
+  default = "datastore38_ssd"
 }
 
 variable "vsphere_vm_template" {
   type = string
   description = "the name of the vm template"
+  default = "centos8-template"
 }
 
 variable "vsphere_vm_name" {
@@ -34,11 +39,13 @@ variable "vsphere_vm_name" {
 variable "vsphere_resource_pool" {
   type = string
   description = "the name of the resourcepool for examples: Cluster1/Resources " 
+  default = "saukotha_rp"
 }
 
 variable "vsphere_vm_portgroup" {
   type = string
   description = "the name of the portgroup"
+  default = "saukotha-shramu-dc|app|dc"
 }
 
 variable "vsphere_vm_cpu" {
