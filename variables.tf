@@ -45,7 +45,7 @@ variable "vsphere_resource_pool" {
 variable "vsphere_vm_portgroup" {
   type = string
   description = "the name of the portgroup"
-  default = "saukotha-shramu-dc|app|dc"
+  default = "common|VMwareServices_ap|Jumpbox2VM_epg"
 }
 
 variable "vsphere_vm_cpu" {
